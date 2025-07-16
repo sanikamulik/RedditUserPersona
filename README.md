@@ -40,8 +40,6 @@ The final output is a clean `.txt` report and a portable `.html` file that prese
 
 The project is organized with a simple, flat structure for clarity:
 
-The project is organized with a simple, flat structure for clarity:
-
 ```.
 RedditUserPersona/
 ├── 📜 main.ipynb                  # The main Jupyter Notebook with all Python code.
