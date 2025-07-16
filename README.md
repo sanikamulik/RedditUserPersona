@@ -38,14 +38,15 @@ The final output is a clean `.txt` report and a portable `.html` file that prese
 
 ## 📂 File Structure
 
-The project is organized with the following key files:
+The project is organized with a simple, flat structure for clarity:
 
 ```.
-├── 📜 main.ipynb     # The main Jupyter Notebook with all Python code.
-├── 📄 README.md                   # This instruction file.
-├── 🎨 style.css                   # The CSS for the visual persona.
-├── 🖼️ screenshot.png              # A sample screenshot of the output for the README.
-└── 👤 index.html     # The main HTML file
+├── 📜 main.ipynb                  # The main Jupyter Notebook with all Python code.
+├── 📄 README.md                  # This instruction file.
+├── 🎨 style.css                  # The CSS for the visual persona.
+├── 🖼️ screenshot.png             # A sample screenshot of the output for the README.
+├── 📄 index.html                 # The main HTML file that displays the persona.
+└── 📄 persona_data.json           # The generated data file (overwritten on each run).
 ```
 
 ---
