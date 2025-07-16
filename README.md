@@ -57,6 +57,8 @@ RedditUserPersona/
 └── 📂 output/                      # A dedicated folder for all generated files.
     └── (This folder will be created by the script)
 
+```
+
 ---
 
 ## 🛠️ Technologies Used
