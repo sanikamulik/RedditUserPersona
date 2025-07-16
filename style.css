@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #333;
+}
+
+.persona-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+#persona-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1.2;
+}
+.quote-box {
+    background-color: #e85a4f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+.quote-box p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Right Column */
+.right-column h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e85a4f;
+}
+.demographics {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+.demographics div span {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.demographics div p {
+    font-size: 1em;
+    margin: 4px 0 0 0;
+    font-weight: 600;
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.detail-block h3 {
+    text-transform: uppercase;
+    color: #e85a4f;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 8px;
+}
+.detail-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.detail-block ul li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+.motivations h3 {
+    text-transform: uppercase;
+    color: #e85a4f;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.motivation-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.motivation-item .label {
+    width: 100px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.bar-container {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.bar-fill {
+    background-color: #5d5d5d;
+    height: 100%;
+    width: 0; 
+    border-radius: 6px;
+    transition: width 0.5s ease-in-out;
+}
