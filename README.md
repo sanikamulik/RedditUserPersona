@@ -40,14 +40,22 @@ The final output is a clean `.txt` report and a portable `.html` file that prese
 
 The project is organized with a simple, flat structure for clarity:
 
+The project is organized with a simple, flat structure for clarity:
+
 ```.
+RedditUserPersona/
 ├── 📜 main.ipynb                  # The main Jupyter Notebook with all Python code.
-├── 📄 README.md                  # This instruction file.
-├── 🎨 style.css                  # The CSS for the visual persona.
-├── 🖼️ screenshot.png             # A sample screenshot of the output for the README.
-├── 📄 index.html                 # The main HTML file that displays the persona.
-└── 📄 persona_data.json           # The generated data file (overwritten on each run).
-```
+├── 📄 README.md                    # The project's instruction manual.
+├── 🖼️ screenshot.png              # A sample screenshot of the output for the README.
+
+│
+├── 📂 public/                      # All files the browser needs to access.
+│   ├── 📄 index.html             # The main HTML page.
+│   ├── 🎨 style.css              # The CSS for the visual persona.
+│   └── 📜 script.js              # The JavaScript file.
+│
+└── 📂 output/                      # A dedicated folder for all generated files.
+    └── (This folder will be created by the script)
 
 ---
 
