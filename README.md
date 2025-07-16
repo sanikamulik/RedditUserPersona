@@ -15,7 +15,6 @@ _This is an example of the final HTML output._
 -   [Technologies Used](#-technologies-used)
 -   [Setup Guide](#-setup-guide)
 -   [How to Run](#-how-to-run)
--   [How It Works: The "No-Server" Method](#-how-it-works-the-no-server-method)
 
 ---
 
@@ -42,12 +41,11 @@ The final output is a clean `.txt` report and a portable `.html` file that prese
 The project is organized with the following key files:
 
 ```.
-├── 📜 persona_generator.ipynb     # The main Jupyter Notebook with all Python code.
+├── 📜 main.ipynb     # The main Jupyter Notebook with all Python code.
 ├── 📄 README.md                   # This instruction file.
 ├── 🎨 style.css                   # The CSS for the visual persona.
-├── 📄 template.html              # The HTML template used by the Python script.
 ├── 🖼️ screenshot.png              # A sample screenshot of the output for the README.
-└── 👤 [username]_persona.html     # The generated self-contained persona file (e.g., kojied_persona.html).
+└── 👤 index.html     # The main HTML file
 ```
 
 ---
@@ -100,32 +98,23 @@ The script needs API keys from both Reddit and Google.
     3.  Copy the generated key.
     4.  **Important:** For the key to work reliably, you may need to [enable billing on your Google Cloud project](https://cloud.google.com/billing/docs/how-to/enable-billing). The cost for this project is negligible.
 
-### 4. Ensure `template.html` Exists
+### 4. Ensure `index.html` Exists
 
-This project requires a `template.html` file in the same folder as your notebook. This file provides the basic layout for the final output. Please ensure you have created it as specified in the project development.
+This project requires a `index.html` file in the same folder as your notebook. This file provides the basic layout for the final output. Please ensure you have created it as specified in the project development.
 
 ---
 
 ## 💡 How to Run
 
-1.  **Run the Jupyter Notebook:** Open and execute `persona_generator.ipynb`.
+1.  **Run the Jupyter Notebook:** Open and execute `main.ipynb`.
 2.  **Enter Credentials:** The script will securely prompt you to enter your four API credentials.
 3.  **Enter Reddit URL:** Next, paste the full profile URL of the Reddit user you wish to analyze (e.g., `https://www.reddit.com/user/kojied/`).
 4.  **Process Complete:** The script will print its progress and confirm when it's done.
 5.  **View the Persona:**
     -   Navigate to your project folder.
-    -   Find the newly created file named **`[username]_persona.html`** (e.g., `kojied_persona.html`).
-    -   **Double-click this file.** It will open directly in your web browser, fully rendered.
+    -   Find the file named **`index.html`** .
+    -   Ensure you have **Live Server** extension installed.
+    -   Click **Go Live** at the bottom-right of your screen and view the user persona.
 
 ---
 
-## ⚙️ How It Works: The "No-Server" Method
-
-This project uses a self-contained architecture to avoid the common hassle of running a local server to view the output.
-
-1.  The Python script reads the static `template.html` file.
-2.  After the AI generates the persona, the Python script parses this text into a structured JSON format in memory.
-3.  This JSON data is then converted into a string and injected directly into a `<script>` tag within the HTML template.
-4.  Finally, this complete HTML string—containing the layout, styles, and all its required data—is saved as a new `[username]_persona.html` file.
-
-When you open this file, the JavaScript reads the data from the embedded `<script>` tag instead of fetching an external file, thus bypassing all browser security restrictions.
