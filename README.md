@@ -1,6 +1,6 @@
 # 🤖 AI-Powered Reddit User Persona Generator
 
-This script analyzes a Reddit user's public activity to automatically generate a detailed, data-driven user persona. It uses the Google Gemini LLM for analysis and outputs a self-contained, visual HTML report that requires no server to view.
+This script analyzes a Reddit user's public activity to automatically generate a detailed, data-driven user persona. It uses the Google Gemini LLM for analysis and outputs a self-contained visual HTML report.
 
 ![Project Screenshot](screenshot.png)
 _This is an example of the final HTML output._
